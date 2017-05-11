@@ -21,6 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 @Service
 public class InitDbService {
+	
 	@Autowired //on va injecter l'instance de la repo(c'est une classe qui est un bean)
 	private RoleRepository roleRepository;
 	
