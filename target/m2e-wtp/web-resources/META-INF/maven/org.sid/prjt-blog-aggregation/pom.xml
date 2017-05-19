@@ -14,8 +14,14 @@
 	<!-- Les dependances suivent la version en dessus -->
 
 	<dependencies>
-	
-	
+
+		<!-- JSP JSTL core -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
 		<!-- HyperSQL database -->
 		<dependency>
 			<groupId>org.hsqldb</groupId>

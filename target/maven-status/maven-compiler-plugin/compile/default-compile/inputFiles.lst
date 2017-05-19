@@ -3,7 +3,9 @@ C:\Users\Berbish\workspace-Spring\prjt-blog-aggregation\src\main\java\org\blg\se
 C:\Users\Berbish\workspace-Spring\prjt-blog-aggregation\src\main\java\org\blg\controller\IndexController.java
 C:\Users\Berbish\workspace-Spring\prjt-blog-aggregation\src\main\java\org\blg\entity\Role.java
 C:\Users\Berbish\workspace-Spring\prjt-blog-aggregation\src\main\java\org\blg\entity\User.java
+C:\Users\Berbish\workspace-Spring\prjt-blog-aggregation\src\main\java\org\blg\controller\UserController.java
 C:\Users\Berbish\workspace-Spring\prjt-blog-aggregation\src\main\java\org\blg\repository\RoleRepository.java
+C:\Users\Berbish\workspace-Spring\prjt-blog-aggregation\src\main\java\org\blg\service\UserService.java
 C:\Users\Berbish\workspace-Spring\prjt-blog-aggregation\src\main\java\org\blg\repository\UserRepository.java
 C:\Users\Berbish\workspace-Spring\prjt-blog-aggregation\src\main\java\org\blg\entity\Blog.java
 C:\Users\Berbish\workspace-Spring\prjt-blog-aggregation\src\main\java\org\blg\repository\BlogRepository.java
