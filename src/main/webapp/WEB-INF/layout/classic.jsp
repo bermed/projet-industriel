@@ -1,28 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%-- <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
-
+ --%>
+ <%@ include file="../layout/taglib.jsp" %>
 <!DOCTYPE html >
 <html>
 <head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- Optional theme -->
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-	crossorigin="anonymous">
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
 <script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-	crossorigin="anonymous"></script>
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!-- CDN Jquery -->
 <script
@@ -33,6 +28,9 @@
 <title><tiles:getAsString name="title"/></title>
 </head>
 <body>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles-extras" prefix="tilexstra" %>
+<tilexstra:useAttribute name="active"/>
+<!-- ${active} -->
 	<div class="container ">
 	
 	<!-- Static navbar -->
@@ -49,10 +47,8 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href='<spring:url value="/" />'>Accueil</a></li>
-              <li><a href='<spring:url value="/users.html"/>'>Utilisateurs</a></li>
-              <li><a href="#">Contact</a></li>
-              
+              <li class="${active == 'index' ? 'active' : ''}"><a href='<spring:url value="/" />'>Accueil</a></li>
+              <li class="${active == 'users' ? 'active' : ''}"><a href="<spring:url value="/users.html" />">Utilisateurs</a></li>
             </ul>
             
           </div><!--/.nav-collapse -->
